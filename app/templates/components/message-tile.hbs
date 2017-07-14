@@ -2,6 +2,6 @@
           <h3><b>{{message.question}}</b></h3>
         <h4><em>{{message.author}}</em></h4>
         <p>{{message.additionalinfo}}</p>
-        <button type="button" name="button" class="btn btn-info">Answer</button>
+        {{#link-to "answer" message.id class="btn btn-info" }}Answer{{/link-to}}
         <button type="button" name="button" class="btn btn-warning">Update</button>
   </div>

@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('write-question');
+  this.route('answer' ,{path :'/answer/:message_id'});
 });
 
 export default Router;
