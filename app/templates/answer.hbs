@@ -1,1 +1,22 @@
-<h6>{{model.author}}</h6>
+<div class="container">
+  <div class="col-md-12">
+    <div class="row">
+
+      <h1>{{model.question}}</h1>
+      <h4>{{model.author}}</h4>
+      <p>{{model.additionalinfo}}</p>
+    </div>
+    <h1><u>Answers</u></h1>
+      <div class="container">
+        {{#each model.answers as |answer|}}
+            <div class="well">
+
+              <p>{{answer.answer}}.... <em>{{answer.name}}</em></p>
+            </div>
+        {{/each}}
+      </div>
+
+      {{answer-input addAnswer="addAnswer" message=model}}
+
+  </div>
+</div>

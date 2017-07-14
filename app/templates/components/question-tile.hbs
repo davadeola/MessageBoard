@@ -9,7 +9,7 @@
   </div>
   <div class="form-group">
     <label for="additionalinfo">Enter additional Info</label>
-    {{input class="form-control" id="additionalinfo" placeholder="Enter additional Information for your question" value=additionalinfo}}
+    {{textarea rows="7" cols="20" class="form-control" id="additionalinfo" placeholder="Enter additional Information for your question" value=additionalinfo}}
 </div>
   <button type="button" class="btn" {{ action "addQuestion"}}>SUBMIT</button>
 </form>

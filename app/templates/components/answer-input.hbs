@@ -1,0 +1,8 @@
+<div class="row">
+  <h3>Give your own answer</h3>
+  <form class="form">
+    {{input  value=name placeholder="Enter your name" id="name" class="form-control"}}
+    {{textarea  rows="7" cols="20" value=answer placeholder="Submit your answer" id="answer" class="form-control"}}
+    <button type="button" name="button" class="btn btn-success btn-sm" {{action 'addAnswer'}}>SUBMIT</button>
+  </form>
+</div>
