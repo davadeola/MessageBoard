@@ -1,0 +1,29 @@
+{
+  "messages":[
+    {
+      "author":"David A.",
+      "question":"What is Ember?",
+      "additionalinfo":"Where can I get detailed info on how to use Ember in my project. Sorry I am new to these stuff"
+    },
+    {
+      "author":"Ashely C.",
+      "question":"Why can't I create a table on SQL?",
+      "additionalinfo":"I have done so many attempts but nothing is working. and I have an exam coming up . Would appriciate help.Update: thank you everyone"
+    },
+    {
+      "author":"Steph J.",
+      "question":"Have you ever written a letter to Obama and received a response?",
+      "additionalinfo":"Would like to know if I can."
+    },
+    {
+      "author":"Sam O.",
+      "question":"What small business would you start if given $20,000, in New York?",
+      "additionalinfo":"I am a current entreprenuer looking for mentorship."
+    },
+    {
+      "author":"Alice W.",
+      "question":"How does research in theoretical computer science work?",
+      "additionalinfo":"I am an undergraduate student preparing to do research, most likely in the field of complexity theory. To prepare, I have been reading a"
+    }
+  ]
+}
