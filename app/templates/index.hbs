@@ -4,7 +4,7 @@
   <div class="col-md-6">
     <div class="row">
       {{#each model.messages as |message|}}
-      {{message-tile message=message}}
+      {{message-tile message=message destroyMessage="destroyMessage"}}
       {{/each}}
     </div>
   </div>
@@ -15,7 +15,7 @@
         <h1>Popular Questions</h1>
           {{#each model.messages as |message|}}
             <ul>
-            <li>{{#link-to "answer" message.id }}{{message.question}}{{/link-to}}</li>  
+            <li>{{#link-to "answer" message.id }}{{message.question}}{{/link-to}}</li>
             </ul>
           {{/each}}
 </div>

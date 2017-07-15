@@ -4,4 +4,5 @@
         <p>{{message.additionalinfo}}</p>
         {{#link-to "answer" message.id class="btn btn-info" }}Answer question{{/link-to}}
         {{#link-to "update" message.id class="btn btn-warning"}}Edit question{{/link-to}}
+        <button type="button" name="button" {{action "destroyMessage" message}} class="btn btn-danger">Delete</button>
   </div>

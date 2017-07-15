@@ -6,6 +6,18 @@ export default Ember.Route.extend({
       messages:this.store.findAll('message'),
       answers: this.store.findAll('answer')
     });
+  },
+  actions:{
+    destroyMessage(message) {
+      var question = message;
+      var answer_deletions = question.get('answers').map(function(answer) {
+        return answer.destroyRecord();
+      });
+      Ember.RSVP.all(answer_deletions).then(function() {
+        return question.destroyRecord();
+      });
+      this.transitionTo('index');
+    },
   }
 
 });
