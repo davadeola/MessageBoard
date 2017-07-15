@@ -1,15 +1,15 @@
 <form class="form"  method="post">
   <div class="form-group">
     <label for="author">Enter Your name</label>
-    {{input type="text" id="author" value=author class="form-control" placeholder="Enter your username"}}
+    {{input type="text" id="author" value=author class="form-control" placeholder=message.author }}
   </div>
   <div class="form-group">
     <label for="question">Enter Your question</label>
-    {{input type="text" id="question" value=question class="form-control" placeholder="Enter your question"}}
+    {{input type="text" id="question" value=question class="form-control" placeholder=message.question}}
   </div>
   <div class="form-group">
     <label for="additionalinfo">Enter additional Info</label>
-    {{textarea rows="7" cols="20" class="form-control" id="additionalinfo" placeholder="Enter additional Information for your question" value=additionalinfo}}
+    {{textarea rows="7" cols="20" class="form-control" id="additionalinfo" placeholder=message.additionalinfo value=additionalinfo}}
 </div>
-  <button type="button" class="btn" {{ action "addQuestion"}}>SUBMIT</button>
+  <button type="button" class="btn" {{ action "editQuestion" message}}>SUBMIT</button>
 </form>
