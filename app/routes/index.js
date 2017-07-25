@@ -18,6 +18,14 @@ export default Ember.Route.extend({
       });
       this.transitionTo('index');
     },
+
+    upVote(message){
+      var votes = message.get('upvote');
+      var totalVotes = votes +=1;
+      message.setProperties({votes: totalVotes });
+      message.save();
+        console.log('indexworking');
+    }
   }
 
 });
